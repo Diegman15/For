@@ -6,11 +6,13 @@ namespace For
     {
         static void Main(string[] args)
         {
-            int x;
-            Console.WriteLine("Imprime los numeros del x hasta el 60 de 3x3");
-            Console.WriteLine("De donde arrancamos el ciclo: ");
+            int x, y;
+            Console.WriteLine("Imprime los numeros del x hasta y  de -1 ");
+            Console.WriteLine("De donde arrancamos el ciclo (Mayor): ");
             x = Convert.ToInt32(Console.ReadLine());
-            for (int i = x; i <= 60; i +=3)
+            Console.WriteLine("De donde arrancamos el ciclo (Menor): ");
+            y = Convert.ToInt32(Console.ReadLine());
+            for (int i = x; i >= y; i--)
             {
                 Console.WriteLine("i = " + i);
             }
